@@ -28,20 +28,16 @@ public class Lc0206ReverseLinkedList implements LcTemplate {
     }
 
     public ListNode reverseList(ListNode head) {
-        ListNode prev = null, curr = head, next = null;
-        if (curr != null) {
-            next = curr.next;
-        }
-        while (next != null) {
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-            next = next.next;
-        }
+        return reverse(head);
+    }
 
-        if (curr != null) {
-            curr.next = prev;
+    private ListNode reverse(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
         }
-        return curr;
+        ListNode last = reverse(head.next);
+        head.next.next = head;
+        head.next = null;
+        return last;
     }
 }
