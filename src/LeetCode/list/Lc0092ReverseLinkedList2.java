@@ -2,7 +2,7 @@ package LeetCode.list;
 
 import LeetCode.LcTemplate;
 
-public class Lc0092ReverseLinkedListII implements LcTemplate {
+public class Lc0092ReverseLinkedList2 implements LcTemplate {
     @Override
     public void run() {
 
