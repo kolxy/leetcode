@@ -2,6 +2,9 @@ package LeetCode.binarytree;
 
 import LeetCode.LcTemplate;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Lc106ConstructBinaryTreeFromInorderAndPostorder implements LcTemplate {
     @Override
     public void run() {
