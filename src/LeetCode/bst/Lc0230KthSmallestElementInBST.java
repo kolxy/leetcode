@@ -1,7 +1,6 @@
 package LeetCode.bst;
 
 import LeetCode.LcTemplate;
-import LeetCode.binarytree.Lc0652FindDuplicateSubtrees;
 
 public class Lc0230KthSmallestElementInBST implements LcTemplate {
     @Override
